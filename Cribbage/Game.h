@@ -15,8 +15,8 @@ public:
 
 	Deck deck;
 
-	 std::vector<std::vector<std::string>> deal();
+	virtual void getMoves() = 0;
 
-	 virtual void getMoves() = 0;
+	void deal();
 };
 
