@@ -15,8 +15,11 @@ public:
 
 	Deck deck;
 
-	virtual void getMoves() = 0;
+	//virtual void getMoves() = 0;
 
 	void deal();
+
+private:
+	void putInHand(Card* card, int player);
 };
 

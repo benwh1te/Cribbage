@@ -33,6 +33,7 @@ Deck::~Deck() {
 }
 
 void Deck::shuffle() {
+	srand(time(NULL));
 	for (int i = 0; i < 300; i++) {
 		int first = rand() % 52;
 		int second = rand() % 52;
@@ -45,7 +46,7 @@ void Deck::shuffle() {
 	}
 }
 
-ostream& operator<<(ostream& os, const Deck& d) {
+ostream& operator<<(ostream& os, Deck& d) {
 	std::vector<Card*>::iterator it;
 	int i = 0;
 	std::vector<Card*> cards = d.getDeck();

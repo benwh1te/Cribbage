@@ -1,5 +1,11 @@
-﻿  GameCLI.cpp
+﻿  Deck.cpp
+c:\users\benne\source\repos\cribbage\cribbage\deck.cpp(36): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  Skipping... (no relevant changes detected)
+  Compiling...
+  main.cpp
+  Player.cpp
+  GameCLI.cpp
   Game.cpp
+  Card.cpp
+  Generating Code...
   Cribbage.vcxproj -> C:\Users\benne\source\repos\Cribbage\Debug\Cribbage.exe

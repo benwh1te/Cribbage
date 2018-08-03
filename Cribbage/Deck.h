@@ -7,9 +7,9 @@ public:
 	Deck();
 	~Deck();
 
-	vector<Card*> getDeck() const { return cards; }
+	vector<Card*>& getDeck() { return cards; }
 	void shuffle();
-	friend ostream& operator<<(ostream& os, const Deck& d);
+	friend ostream& operator<<(ostream& os, Deck& d);
 
 private:
 	vector<Card*> cards;
