@@ -12,9 +12,10 @@ public:
 
 	friend ostream& operator<<(ostream& os, const Card* c);
 
-private:
 	string value;
 	string suit;
+	int order;
+	int pointValue;
 	
 };
 

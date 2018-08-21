@@ -14,6 +14,7 @@ public:
 	Card* starter;
 
 	vector<Card*> currentRound;
+	int currentRoundSum;
 
 	void clearRound();
 	void clearBoard(vector<Card*>& deck);
