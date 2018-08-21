@@ -38,8 +38,9 @@ int main() {
 	}
 	cout << "\n\n";
 	game.board.clearBoard(game.deck.getDeck());
-	cout << "board cleared\n";
+	cout << "board cleared";
 	cout << game.deck;
+	cout << "\n\n";
 	
 
 	system("pause");
