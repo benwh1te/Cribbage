@@ -9,5 +9,6 @@ public:
 	~Player();
 
 	vector<Card*> hand;
+	string getMove();
 };
 

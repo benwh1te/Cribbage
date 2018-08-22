@@ -1,10 +1,11 @@
 #include "common.h"
 #include "Game.h"
-
+#include "Card.h"
 
 int main() {
 	Game game;
 	game.deal();
+	//std::sort(game.playerOne.hand.begin(), game.playerOne.hand.end(), sorter);
 	cout << "After dealing.\n\n";
 	vector<Card*>::iterator it;
 	for (it = game.playerOne.hand.begin(); it != game.playerOne.hand.end(); it++) 

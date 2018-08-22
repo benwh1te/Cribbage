@@ -22,6 +22,7 @@ public:
 
 	void deal();
 	void testGetMove();
+	void getMove(int player);
 
 private:
 	void putInHand(Card* card, int player);

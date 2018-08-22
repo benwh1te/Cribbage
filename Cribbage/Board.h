@@ -18,5 +18,6 @@ public:
 
 	void clearRound();
 	void clearBoard(vector<Card*>& deck);
+	void playCard(Card* played);
 };
 

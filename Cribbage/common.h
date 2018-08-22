@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include <algorithm>
 #include <stdlib.h>
 #include <vector>
 #include "time.h"

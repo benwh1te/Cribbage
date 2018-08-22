@@ -37,6 +37,38 @@ void Game::putInHand(Card* card, int player) {
 	
 }
 
+void Game::getMove(int player) {
+	string play = "";
+	int index = -1;
+	if (player == 1) {
+		play = playerOne.getMove();
+		for (unsigned int i = 0; i < playerOne.hand.size(); i++) {
+			string tmp = playerOne.hand[i]->value + "_" + playerOne.hand[i]->suit;
+			if (tmp == play) {
+				index = i;
+				board.playCard(playerOne.hand[index]);
+				playerOne.hand.erase(playerOne.hand.begin() + index);
+				break;
+			}
+		}
+	}
+	else {
+		play = playerTwo.getMove();
+		for (unsigned int i = 0; i < playerTwo.hand.size(); i++) {
+			string tmp = playerTwo.hand[i]->value + "_" + playerTwo.hand[i]->suit;
+			if (tmp == play) {
+				index = i;
+				board.playCard(playerTwo.hand[index]);
+				playerTwo.hand.erase(playerTwo.hand.begin() + index);
+				break;
+			}
+		}
+	}
+	if (index == -1) {
+		// get move again and report error
+	}
+}
+
 void Game::testGetMove() {
 	for (int i = 0; i < 2; i++) {
 		board.crib.push_back(playerOne.hand.back());

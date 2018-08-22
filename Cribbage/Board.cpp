@@ -37,3 +37,7 @@ void Board::clearBoard(vector<Card*>& deck) {
 	}
 	currentRoundSum = 0;
 }
+
+void Board::playCard(Card* played) {
+	currentRound.push_back(played);
+}

@@ -12,6 +12,9 @@ public:
 
 	friend ostream& operator<<(ostream& os, const Card* c);
 
+	friend bool operator<(const Card& l, const Card& r) { return l.order < r.order; }
+
+
 	string value;
 	string suit;
 	int order;
